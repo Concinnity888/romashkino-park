@@ -1,0 +1,27 @@
+{
+    "name": "romashkino-park",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "gulp style"
+    },
+    "author": "Anna",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^9.6.1",
+        "gulp": "^4.0.2",
+        "gulp-csso": "^3.0.1",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^8.0.0",
+        "gulp-sass": "^4.0.2"
+    },
+    "dependencies": {
+        "browserslist": "^4.6.6"
+    },
+    "browserslist": [
+        "last 2 versions",
+        "IE 11"
+    ]
+}
