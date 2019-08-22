@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap&subset=cyrillic");
+.page {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #323232; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+@media (max-width: 1169px) {
+  .container {
+    width: 510px; } }
+
+@media (max-width: 545px) {
+  .container {
+    width: 100%;
+    padding: 0 7px; } }
+
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+  line-height: 29px;
+  letter-spacing: 1.35px;
+  font-weight: 500;
+  vertical-align: middle;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid #323232;
+  border-radius: 4px;
+  cursor: pointer; }
+  .btn:hover {
+    -webkit-box-shadow: 0px 3px 6px rgba(50, 50, 50, 0.31);
+            box-shadow: 0px 3px 6px rgba(50, 50, 50, 0.31); }
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  background-color: #ececec; }
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.header__nav {
+  font-size: 0; }
+
+.header__nav-link {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-right: 25px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 400;
+  vertical-align: middle;
+  text-decoration: none;
+  color: inherit; }
+  .header__nav-link--green {
+    color: #1E531B; }
+  .header__nav-link:nth-last-of-type(1) {
+    margin-right: 0; }
+  .header__nav-link:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    height: 1px;
+    background-color: #323232; }
+  .header__nav-link--green:hover::before {
+    background-color: #1E531B; }
+
+.header__link {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit; }
+  .header__link::before {
+    content: '';
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .header__link--phone {
+    margin-left: auto;
+    padding-left: 21px;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.35px; }
+    .header__link--phone::before {
+      top: 5px;
+      left: 0;
+      width: 15px;
+      height: 19px;
+      background-image: url("../img/icon-phone.png"); }
+  .header__link--login {
+    margin-left: 93px;
+    padding-left: 25px;
+    font-size: 12px;
+    line-height: 30px; }
+    .header__link--login::before {
+      top: 5px;
+      left: 0;
+      width: 16px;
+      height: 17px;
+      background-image: url("../img/icon-login.png"); }
+
+.header__btn-callback {
+  margin-left: 68px; }
+
+@media (max-width: 1169px) {
+  .header {
+    padding-top: 4px;
+    padding-bottom: 3px; }
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header__nav {
+    display: none; }
+  .header__link,
+  .header__btn-callback {
+    margin-left: 0; }
+  .header__link {
+    line-height: 28px; }
+    .header__link--phone {
+      padding-left: 22px; }
+      .header__link--phone::before {
+        left: 2px; }
+    .header__link--login {
+      padding-left: 36px;
+      font-size: 10px; }
+      .header__link--login::before {
+        left: 8px; }
+  .header__btn-callback {
+    padding: 0 16px;
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 1.15px; } }
+
+@media (max-width: 545px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0; }
+  .header__btn-callback {
+    display: none; }
+  .header__link--phone {
+    font-size: 12px;
+    line-height: 26px; }
+  .header__link--login {
+    padding-left: 36px;
+    line-height: 30px; }
+    .header__link--login::before {
+      top: 6px;
+      left: 14px; } }

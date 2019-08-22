@@ -1,0 +1,22 @@
+.btn {
+    display: inline-block;
+    margin: 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    font-size: 12px;
+    line-height: 29px;
+    letter-spacing: 1.35px;
+    font-weight: 500;
+    vertical-align: middle;
+
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid #323232;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 3px 6px rgba(50,50,50,0.31);
+    }
+}
