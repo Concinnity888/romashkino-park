@@ -22,6 +22,7 @@ gulp.task('style', function () {
 gulp.task('scripts', function() {
     return gulp.src([
             'src/js/libs/stickyfill.min.js',
+            'src/js/libs/tiny-slider.min.js',
             'src/js/scripts.js'
         ])
         .pipe(concat('main.js'))
