@@ -1,5 +1,6 @@
 .about {
     min-height: 565px;
+    margin-bottom: 85px;
     padding-top: 43px;
     padding-right: 585px;
 
@@ -30,7 +31,7 @@
 }
 
 .about__btn {
-    padding: 0 14px;
+    padding: 0 13px;
 
     letter-spacing: 0.35px;
     text-decoration: none;
@@ -40,6 +41,7 @@
 @media (max-width: 1169px) {
     .about {
         min-height: 100px;
+        margin-bottom: 46px;
         padding-top: 0;
         padding-right: 0;
 
@@ -80,6 +82,7 @@
 
 @media (max-width: 545px) {
     .about {
+        margin-bottom: 45px;
         padding: 0;
     }
 

@@ -1,0 +1,197 @@
+.gallery {
+    padding-bottom: 88px;
+
+    text-align: center;
+}
+
+.gallery__title {
+    max-width: 390px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.gallery__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding: 0;
+
+    list-style: none;
+}
+
+.gallery__list-item {
+    width: 360px;
+    height: 305px;
+    padding: 0 40px;
+    padding-top: 81px;
+    box-sizing: border-box;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:nth-of-type(1) {
+        background-image: url('../img/plants.jpg');
+    }
+
+    &:nth-of-type(2) {
+        background-image: url('../img/projects.jpg');
+    }
+
+    &:nth-of-type(3) {
+        background-image: url('../img/weekdays.jpg');
+    }
+}
+
+.gallery__wrap {
+    padding-top: 25px;
+    padding-bottom: 33px;
+
+    background-color: rgba(50, 50, 50, 0.6);
+}
+
+.gallery__subtitle {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.gallery__link {
+    text-decoration: none;
+}
+
+.gallery__btn {
+    letter-spacing: 0.35px;
+    text-decoration: none;
+}
+
+
+@media (max-width: 1169px) {
+    .gallery {
+        padding-bottom: 22px;
+    }
+
+    .gallery__list {
+        flex-direction: column;
+        margin-bottom: 23px;
+    }
+
+    .gallery__wrap {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 0 24px;
+        padding-top: 18px;
+        padding-bottom: 17px;
+        box-sizing: border-box;
+    }
+
+    .gallery__list-item {
+        width: 508px;
+        height: 135px;
+        margin-bottom: 15px;
+        padding: 0 43px;
+        padding-top: 35px;
+
+        &:nth-of-type(1) {
+            background-image: url('../img/plants-tablet.jpg');
+        }
+
+        &:nth-of-type(2) {
+            background-image: url('../img/projects-tablet.jpg');
+        }
+
+        &:nth-of-type(3) {
+            margin-bottom: 0;
+
+            background-image: url('../img/weekdays-tablet.jpg');
+        }
+    }
+
+    .gallery__title {
+        margin: 0 auto;
+        margin-bottom: 25px;
+
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .gallery__subtitle {
+        margin-bottom: 0;
+        margin-top: -3px;
+        margin-right: 14px;
+
+        font-size: 12px;
+        line-height: 18px;
+        text-align: right;
+    }
+
+    .gallery__link {
+        flex-shrink: 0;
+    }
+}
+
+
+@media (max-width: 545px) {
+    .gallery__title {
+        margin-bottom: 17px;
+
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .gallery__list {
+        width: 306px;
+        margin-bottom: 28px;
+    }
+
+    .gallery__list-item {
+        width: 306px;
+        height: 135px;
+        margin-bottom: 10px;
+        padding: 0 14px;
+        padding-top: 15px;
+
+        &:nth-of-type(1) {
+            background-image: url('../img/plants-mobile.jpg');
+        }
+
+        &:nth-of-type(2) {
+            background-image: url('../img/projects-mobile.jpg');
+        }
+
+        &:nth-of-type(3) {
+            background-image: url('../img/weekdays-mobile.jpg');
+        }
+    }
+
+    .gallery__wrap {
+        display: block;
+        padding-top: 12px;
+        padding-bottom: 13px;
+    }
+
+    .gallery__subtitle {
+        margin-bottom: 17px;
+        margin-top: 0;
+        margin-right: 0;
+
+        text-align: center;
+    }
+}
+
