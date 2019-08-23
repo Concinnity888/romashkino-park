@@ -6,6 +6,7 @@ var plumber = require('gulp-plumber');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var minify = require('gulp-csso');
+var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 
@@ -19,6 +20,12 @@ gulp.task('style', function () {
         .pipe(gulp.dest('src/css'));
 });
 
+gulp.task('style:min', function () {
+    return gulp.src('src/css/style.css')
+        .pipe(minify())
+        .pipe(gulp.dest('docs/css'));
+});
+
 gulp.task('scripts', function() {
     return gulp.src([
             'src/js/libs/stickyfill.min.js',
@@ -27,6 +34,12 @@ gulp.task('scripts', function() {
         ])
         .pipe(concat('main.js'))
         .pipe(gulp.dest('src/js'));
+});
+
+gulp.task('scripts:min', function() {
+    return gulp.src('src/js/main.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('docs/js'));
 });
 
 gulp.task('images', function() {
