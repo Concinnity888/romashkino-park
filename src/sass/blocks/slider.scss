@@ -1,5 +1,7 @@
 .slider {
     position: relative;
+
+    margin-bottom: 91px;
 }
 
 .slider__item {
@@ -109,6 +111,7 @@
 @media (max-width: 1169px) {
     .slider {
         width: 547px;
+        margin-bottom: 64px;
     }
 
     .slider__item {
@@ -148,6 +151,7 @@
 @media (max-width: 545px) {
     .slider {
         width: 320px;
+        margin-bottom: 31px;
         padding: 0;
     }
 

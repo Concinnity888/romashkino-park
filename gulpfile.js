@@ -7,7 +7,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var minify = require('gulp-csso');
 var concat = require('gulp-concat');
-const imagemin = require('gulp-imagemin');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('style', function () {
     return gulp.src('src/sass/style.scss')
@@ -37,4 +37,26 @@ gulp.task('images', function() {
         ]))
         .pipe(gulp.dest('docs/img'));
 });
+
+gulp.task('copy', function() {
+    return gulp.src([
+            'src/**/*.{html}',
+            'src/fonts/**/*.{woff, woff2}',
+        ], {
+            'base': 'src'
+        })
+        .pipe(gulp.dest('docs'));
+});
+
+gulp.task('dev', [
+    'style',
+    'scripts'
+]);
+
+gulp.task('build', [
+    'copy',
+    'style:min',
+    'scripts:min',
+    'images'
+]);
 

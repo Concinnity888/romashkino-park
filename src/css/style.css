@@ -137,6 +137,19 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 @media (max-width: 1169px) {
   .container {
     width: 510px; } }
@@ -174,6 +187,7 @@
               box-shadow: none; }
 
 .header {
+  z-index: 2;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -309,7 +323,8 @@
       left: 14px; } }
 
 .slider {
-  position: relative; }
+  position: relative;
+  margin-bottom: 91px; }
 
 .slider__item {
   min-height: 375px;
@@ -398,7 +413,8 @@
 
 @media (max-width: 1169px) {
   .slider {
-    width: 547px; }
+    width: 547px;
+    margin-bottom: 64px; }
   .slider__item {
     min-height: 305px;
     padding-left: 170px;
@@ -422,6 +438,7 @@
 @media (max-width: 545px) {
   .slider {
     width: 320px;
+    margin-bottom: 31px;
     padding: 0; }
   .slider__item {
     min-height: 204px;
@@ -449,3 +466,223 @@
     float: none;
     width: 150px;
     margin: 0 auto; } }
+
+.catalog__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  padding: 0;
+  list-style: none; }
+
+.catalog__list-item {
+  display: block;
+  width: 195px;
+  height: 72px;
+  margin-right: 41px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.31);
+          box-shadow: 0px 1px 4px rgba(50, 50, 50, 0.31);
+  background-color: #ffffff; }
+  .catalog__list-item:nth-child(5n) {
+    margin-right: 0; }
+
+.catalog__list-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-left: 68px;
+  padding-right: 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #1e521a;
+  background-repeat: no-repeat; }
+
+.catalog__list-item--pine a {
+  background-image: url("../img/pine.jpg");
+  background-position: 2px 18px; }
+
+.catalog__list-item--deciduous-trees a {
+  background-image: url("../img/deciduous-trees.jpg");
+  background-position: 2px 21px; }
+
+.catalog__list-item--deciduous-shrubs a {
+  background-image: url("../img/deciduous-shrubs.jpg");
+  background-position: 2px 19px; }
+
+.catalog__list-item--fruit-trees a {
+  background-image: url("../img/fruit-trees.jpg");
+  background-position: 0 21px; }
+
+.catalog__list-item--fruit-bushes a {
+  background-image: url("../img/fruit-bushes.jpg");
+  background-position: 3px 19px; }
+
+.catalog__list-item--perennials a {
+  background-image: url("../img/perennials.jpg");
+  background-position: 0px 19px; }
+
+.catalog__list-item--heather-plants a {
+  background-image: url("../img/heather-plants.jpg");
+  background-position: 3px 19px; }
+
+.catalog__list-item--creepers a {
+  background-image: url("../img/creepers.jpg");
+  background-position: 1px 20px; }
+
+.catalog__list-item--roses a {
+  background-image: url("../img/roses.jpg");
+  background-position: 1px 20px; }
+
+.catalog__list-item--moldedplants a {
+  background-image: url("../img/moldedplants.jpg");
+  background-position: 5px 20px; }
+
+.catalog__list-item--garden-products a {
+  background-image: url("../img/garden-products.jpg");
+  background-position: 2px 21px; }
+
+.catalog__list-item--soils-and-fertilizers a {
+  background-image: url("../img/soils-and-fertilizers.jpg");
+  background-position: 0 20px; }
+
+.catalog__list-item--water-plants a {
+  background-image: url("../img/water-plants.jpg");
+  background-position: 11px 15px; }
+
+.catalog__list-item--gift-certificates a {
+  background-image: url("../img/gift-certificates.jpg");
+  background-position: 3px 22px; }
+
+@media (max-width: 1169px) {
+  .catalog__list-item {
+    width: 118px;
+    height: 99px;
+    margin-right: 12px;
+    margin-bottom: 12px; }
+    .catalog__list-item:nth-child(5n) {
+      margin-right: 12px; }
+    .catalog__list-item:nth-child(4n) {
+      margin-right: 0; }
+  .catalog__list-item a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 45px;
+    text-align: center; }
+  .catalog__list-item--pine a {
+    padding-top: 30px;
+    background-position: 27px 9px; }
+  .catalog__list-item--deciduous-trees a {
+    background-position: 28px 10px; }
+  .catalog__list-item--deciduous-shrubs a {
+    background-position: 26px 9px; }
+  .catalog__list-item--fruit-trees a {
+    background-position: 26px 10px; }
+  .catalog__list-item--fruit-bushes a {
+    background-position: 27px 9px; }
+  .catalog__list-item--perennials a {
+    padding-top: 30px;
+    background-position: 24px 10px; }
+  .catalog__list-item--heather-plants a {
+    background-position: 29px 6px; }
+  .catalog__list-item--creepers a {
+    padding-top: 30px;
+    background-position: 24px 9px; }
+  .catalog__list-item--roses a {
+    padding-top: 30px;
+    background-position: 28px 11px; }
+  .catalog__list-item--moldedplants a {
+    background-position: 26px 10px; }
+  .catalog__list-item--garden-products a {
+    background-position: 27px 13px; }
+  .catalog__list-item--soils-and-fertilizers a {
+    background-position: 26px 13px; }
+  .catalog__list-item--water-plants {
+    margin-left: auto;
+    margin-right: 13px; }
+  .catalog__list-item--water-plants a {
+    background-position: 36px 7px; }
+  .catalog__list-item--gift-certificates {
+    margin-right: auto; }
+  .catalog__list-item--gift-certificates a {
+    background-position: 26px 14px; } }
+
+@media (max-width: 545px) {
+  .catalog__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 320px;
+    padding: 0 7px; }
+  .catalog__list-item {
+    width: 148px;
+    height: 60px;
+    margin-right: 0;
+    margin-bottom: 10px; }
+    .catalog__list-item:nth-child(5n) {
+      margin-right: 0; }
+    .catalog__list-item:nth-child(4n) {
+      margin-right: 0; }
+  .catalog__list-item {
+    margin-left: 0; }
+  .catalog__list-item a {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 0;
+    padding-left: 50px;
+    text-align: left; }
+  .catalog__list-item--pine a {
+    padding-top: 0;
+    background-position: -6px 12px; }
+  .catalog__list-item--deciduous-trees a {
+    background-position: -6px 12px; }
+  .catalog__list-item--deciduous-shrubs a {
+    background-position: -7px 9px; }
+  .catalog__list-item--fruit-trees a {
+    background-position: -9px 13px; }
+  .catalog__list-item--fruit-bushes a {
+    background-position: -10px 12px; }
+  .catalog__list-item--perennials a {
+    background-position: -10px 13px; }
+  .catalog__list-item--heather-plants a {
+    background-position: -6px 13px; }
+  .catalog__list-item--creepers a {
+    background-position: -12px 14px; }
+  .catalog__list-item--roses a {
+    background-position: -4px 14px;
+    background-size: 61px auto; }
+  .catalog__list-item--moldedplants a {
+    background-position: -11px 12px; }
+  .catalog__list-item--garden-products a {
+    background-position: 2px 18px;
+    background-size: 48px auto; }
+  .catalog__list-item--soils-and-fertilizers a {
+    background-position: -10px 13px; }
+  .catalog__list-item--water-plants a {
+    background-position: 3px 11px;
+    background-size: 45px auto; }
+  .catalog__list-item--gift-certificates a {
+    background-position: -2px 18px;
+    background-size: 50px auto; } }

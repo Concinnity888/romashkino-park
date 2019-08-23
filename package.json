@@ -6,15 +6,13 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "gulp dev",
-        "style": "gulp style",
-        "scripts": "gulp scripts",
         "build": "gulp build"
     },
     "author": "Anna",
     "license": "ISC",
     "devDependencies": {
         "autoprefixer": "^9.6.1",
-        "gulp": "^4.0.2",
+        "gulp": "^3.9.1",
         "gulp-concat": "^2.6.1",
         "gulp-csso": "^3.0.1",
         "gulp-imagemin": "^6.1.0",
