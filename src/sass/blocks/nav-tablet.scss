@@ -1,0 +1,31 @@
+@media (max-width: 1169px) {
+    .nav-tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 17px;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    .nav-tablet__item a {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        font-size: 12px;
+        line-height: 30px;
+        text-decoration: none;
+        font-weight: 400;
+
+        color: #323232;
+    }
+}
+
+
+@media (max-width: 545px) {
+    .nav-tablet {
+        display: none;
+    }
+}
