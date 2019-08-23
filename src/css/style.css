@@ -168,6 +168,7 @@
   line-height: 29px;
   letter-spacing: 1.35px;
   font-weight: 500;
+  text-align: center;
   vertical-align: middle;
   color: inherit;
   background-color: transparent;
@@ -467,6 +468,9 @@
     width: 150px;
     margin: 0 auto; } }
 
+.catalog {
+  margin-bottom: 47px; }
+
 .catalog__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,6 +577,8 @@
   background-position: 3px 22px; }
 
 @media (max-width: 1169px) {
+  .catalog {
+    margin-bottom: 32px; }
   .catalog__list-item {
     width: 118px;
     height: 99px;
@@ -629,6 +635,8 @@
     background-position: 26px 14px; } }
 
 @media (max-width: 545px) {
+  .catalog {
+    margin-bottom: 26px; }
   .catalog__list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -686,3 +694,79 @@
   .catalog__list-item--gift-certificates a {
     background-position: -2px 18px;
     background-size: 50px auto; } }
+
+.about {
+  min-height: 565px;
+  padding-top: 43px;
+  padding-right: 585px;
+  background-image: url("../img/bg-about.jpg");
+  background-repeat: no-repeat;
+  background-position: right top; }
+
+.about__title {
+  margin: 0;
+  margin-bottom: 28px;
+  padding: 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.about__text {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400; }
+
+.about__btn {
+  padding: 0 14px;
+  letter-spacing: 0.35px;
+  text-decoration: none; }
+
+@media (max-width: 1169px) {
+  .about {
+    min-height: 100px;
+    padding-top: 0;
+    padding-right: 0;
+    text-align: center;
+    background-image: none; }
+  .about__title {
+    max-width: 360px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px; }
+  .about__text {
+    max-width: 425px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+    font-size: 12px;
+    line-height: 18px; }
+  .about__text br {
+    display: none; }
+  .about__btn {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0 13px; } }
+
+@media (max-width: 545px) {
+  .about {
+    padding: 0; }
+  .about__title {
+    max-width: 280px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px; }
+  .about__text {
+    max-width: 300px;
+    margin-bottom: 18px;
+    font-size: 11px; }
+    .about__text:nth-last-of-type(1) {
+      max-width: 250px;
+      margin-bottom: 16px; }
+  .about__btn {
+    width: 150px;
+    margin: 0 auto;
+    padding: 0 13px; } }

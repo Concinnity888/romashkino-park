@@ -1,3 +1,7 @@
+.catalog {
+    margin-bottom: 47px;
+}
+
 .catalog__list {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +118,10 @@
 
 
 @media (max-width: 1169px) {
+    .catalog {
+        margin-bottom: 32px;
+    }
+
     .catalog__list-item {
         width: 118px;
         height: 99px;
@@ -214,6 +222,10 @@
 
 
 @media (max-width: 545px) {
+    .catalog {
+        margin-bottom: 26px;
+    }
+
     .catalog__list {
         justify-content: space-between;
         width: 320px;
