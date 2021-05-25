@@ -22,7 +22,7 @@
         "gulp-uglify": "^3.0.2"
     },
     "dependencies": {
-        "browserslist": "^4.6.6"
+        "browserslist": "^4.16.5"
     },
     "browserslist": [
         "last 2 versions",
